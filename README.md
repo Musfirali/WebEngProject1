@@ -24,7 +24,6 @@ MeraMechanic is a web application designed for an automotive service center. It 
 - **Admin Panel:** Manage users, appointments, and orders.
 - **Mechanic Dashboard:** View and update assigned appointments.
 - **Order Management:** Customers can order car parts and track their orders.
-- **Payment Integration:** Integrated with Stripe for secure payments.
 - **Responsive Design:** Works on all devices (mobile, tablet, desktop).
 
 ## Tech Stack
@@ -39,7 +38,7 @@ MeraMechanic is a web application designed for an automotive service center. It 
 - Express.js
 - MongoDB with Mongoose
 - JWT for authentication
-- Stripe API for payments
+
 
 ## Installation
 
@@ -48,7 +47,7 @@ MeraMechanic is a web application designed for an automotive service center. It 
 Ensure you have the following installed:
 - Node.js
 - MongoDB
-- Stripe account (for payment integration)
+
 
 ### Steps
 
@@ -99,8 +98,6 @@ MONGO_URI=mongodb://localhost:27017/MeraMechanic
 # JWT Secret
 JWT_SECRET=your_jwt_secret
 
-# Stripe API key
-STRIPE_SECRET_KEY=your_stripe_secret_key
 
 # Node environment
 NODE_ENV=development
@@ -114,7 +111,7 @@ PORT=3001
 ### User Workflow
 1. **Sign Up / Login:** Users can create an account or log in using their credentials.
 2. **Browse Parts:** Users can browse available car parts and add them to the cart.
-3. **Checkout:** Users can proceed to checkout and make payments using Stripe.
+3. **Checkout:** Users can proceed to checkout and make payments.
 4. **Book Appointments:** Users can book service appointments and choose a mechanic.
 5. **Order Tracking:** Users can track their order status and view past orders.
 
